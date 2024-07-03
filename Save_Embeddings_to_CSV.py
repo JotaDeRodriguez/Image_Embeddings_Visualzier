@@ -68,6 +68,6 @@ for count, image in enumerate(images):
     h_loc = image_width*div
     w_loc = image_width*mod
     spriteimage.paste(image,(w_loc,h_loc))
-spriteimage.convert("RGB").save('sprite.jpg', transparency=0)
+spriteimage.convert("RGB").save('vis/sprite.jpg', transparency=0)
 
 metadata = existing_images_df[['cat_id', 'pid']].to_csv(r'vis/metadata.tsv', sep='\t', index=False)
